@@ -16,7 +16,7 @@ public class FinanceApplication {
         System.setProperty("java.awt.headless", "false");
         AppExchangeRates appExchangeRates = new AppExchangeRates();
 
-        RateParam rateParam = new RateParam("431", "2021-09-31", "2021-10-30");
+        RateParam rateParam = new RateParam("431", "2021-09-29", "2021-11-04");
         Map<String, Double> list = appExchangeRates.getAppExchangeRates(rateParam);
         GraphRate graphRate = new GraphRate(list, rateParam);
         graphRate.createGraph(list, rateParam);

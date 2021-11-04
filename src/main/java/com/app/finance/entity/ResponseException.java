@@ -1,10 +1,10 @@
-package com.app.finance.web;
+package com.app.finance.entity;
 
-public class Response {
+public class ResponseException {
     private String message;
     private String messageJava;
 
-    public Response(String message, String messageJava) {
+    public ResponseException(String message, String messageJava) {
         this.message = message;
         this.messageJava = messageJava;
     }
